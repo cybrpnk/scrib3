@@ -1,0 +1,38 @@
+/*MIXINS*/
+@mixin fillparent {
+	height: 100%;
+	width: 100%;
+}
+
+/*COLOR VARIABLES*/
+$darkonlight : #212121;
+$lightondark : #fafafa;
+
+$maincolor : #03a9f4;
+$maincolorlight : #b3e5fc;
+$maincolordark : #0288d1;
+$accentcolor : #ffeb3b;
+$accentcolorlight : #fff9c4;
+$accentcolordark : #fbc02d;
+
+/*FONT DECLARATION*/
+
+
+/*BODY RULES*/
+button { cursor: pointer; }
+input[type="checkbox"]{ height: 18px; width: 18px; vertical-align: middle; }
+html, body {
+	background: $lightondark;
+	color: $darkonlight;
+	font: 14pt/1.25em "Times New Roman", serid; 
+	position: relative;
+	@include fillparent;
+}
+body {
+	height: auto !important;
+	min-height: 100%;
+}
+
+noscript {
+	
+}
